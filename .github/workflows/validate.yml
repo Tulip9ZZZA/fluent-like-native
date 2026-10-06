@@ -1,0 +1,21 @@
+name: Validate skill package
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate lexicon
+        run: python skills/fluent-like-native/scripts/lexicon.py validate skills/fluent-like-native/references/lexicon.csv
+      - name: Check script syntax
+        run: python -m py_compile skills/fluent-like-native/scripts/lexicon.py
