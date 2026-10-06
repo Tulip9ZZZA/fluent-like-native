@@ -1,8 +1,23 @@
-# Fluent Like Native
+<p align="center">
+  <img src="assets/logo.svg" alt="Fluent Like Native logo: an abstract F made from speech plumes" width="112">
+</p>
 
-<p align="center"><img src="assets/logo.svg" alt="Fluent Like Native logo: a white flowing F inside a coral speech bubble" width="112"></p>
+<h1 align="center">Fluent Like Native</h1>
 
-**A context-aware writing skill for natural, culturally aware language.**
+<p align="center"><strong>Context-aware language for writing that sounds natural where it will actually be used.</strong></p>
+
+<p align="center">
+  <a href="https://github.com/Tulip9ZZZA/fluent-like-native/actions/workflows/validate.yml"><img alt="Validation status" src="https://github.com/Tulip9ZZZA/fluent-like-native/actions/workflows/validate.yml/badge.svg"></a>
+  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-111111.svg"></a>
+  <a href="https://agentskills.io/specification"><img alt="Agent Skills compatible" src="https://img.shields.io/badge/Agent%20Skills-compatible-F2562F.svg"></a>
+</p>
+
+<p align="center">
+  <a href="#install">Install</a> ·
+  <a href="#use-it">Use it</a> ·
+  <a href="#thai-fitness-example">Example</a> ·
+  <a href="#bring-your-own-vocabulary">Lexicon</a>
+</p>
 
 Fluent Like Native helps an AI agent write, translate, adapt, and review language for a specific audience and situation. It combines a practical linguistic workflow with optional, source-traceable vocabulary research. It is designed for social content, professional communication, public speaking, customer support, learning materials, and other user-defined contexts.
 
@@ -87,11 +102,13 @@ needs a human cultural review: [paste draft]
 
 ## Thai fitness example
 
-The repository includes the two user-provided Thai fitness screenshots as an illustrative before/with-skill comparison. The first shows the brief without an explicit skill call; the second includes `/fluent-like-native`. They demonstrate an example workflow, not a controlled language-quality evaluation. The fitness claims in the images have not been medically or scientifically reviewed; verify them with qualified sources before reuse.
+The same Thai fitness request was run without the skill and then with `/fluent-like-native`. In this example, the skill-enabled response uses a stronger audience hook, more conversational Thai, and fitness-specific code-switching.
 
-| Baseline prompt | Prompt invoking the skill |
+| Without the skill | With `/fluent-like-native` |
 | --- | --- |
-| [View the baseline example](assets/examples/thai-fitness-baseline.png) | [View the skill example](assets/examples/thai-fitness-with-skill.png) |
+| <img src="assets/examples/thai-fitness-baseline.png" alt="Thai fitness response without Fluent Like Native" width="440"> | <img src="assets/examples/thai-fitness-with-skill.png" alt="Thai fitness response using Fluent Like Native" width="440"> |
+
+These screenshots illustrate one run rather than a controlled evaluation. The fitness claims shown in them have not been scientifically reviewed.
 
 ## On-demand research
 
